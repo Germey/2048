@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "UTF-8"/>
+	<title>静觅-2048</title>
+	<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes"/>
+	<link rel = "stylesheet" type = "text/css" href = "css/2048.css">
+	<script type = "text/javascript" src = "js/jquery.min.js"></script>
+	<script type = "text/javascript" src = "js/main2048.js"></script>
+	<script type = "text/javascript" src = "js/showanimation2048.js"></script>
+	<script type = "text/javascript" src = "js/support2048.js"></script>
+</head>
+<body>
+	<header>
+		<h1>2048</h1>
+		<a href ="javascript:newgame()" id = "newgame">新游戏</a>
+		<p>分数:<span id = "score">0</span></p>
+	</header>
+	<div id = "grid-container">
+		<div class = "grid-cell" id = "grid-cell-0-0"></div>
+		<div class = "grid-cell" id = "grid-cell-0-1"></div>
+		<div class = "grid-cell" id = "grid-cell-0-2"></div>
+		<div class = "grid-cell" id = "grid-cell-0-3"></div>
+		
+		<div class = "grid-cell" id = "grid-cell-1-0"></div>
+		<div class = "grid-cell" id = "grid-cell-1-1"></div>
+		<div class = "grid-cell" id = "grid-cell-1-2"></div>
+		<div class = "grid-cell" id = "grid-cell-1-3"></div>
+		
+		<div class = "grid-cell" id = "grid-cell-2-0"></div>
+		<div class = "grid-cell" id = "grid-cell-2-1"></div>
+		<div class = "grid-cell" id = "grid-cell-2-2"></div>
+		<div class = "grid-cell" id = "grid-cell-2-3"></div>
+		
+		<div class = "grid-cell" id = "grid-cell-3-0"></div>
+		<div class = "grid-cell" id = "grid-cell-3-1"></div>
+		<div class = "grid-cell" id = "grid-cell-3-2"></div>
+		<div class = "grid-cell" id = "grid-cell-3-3"></div>
+		<div class = "dialog-success">
+			<div class = "success">恭喜您完成2048</div>
+			<div><a href ="javascript:again()" id = "newgame">重新开始</a></div>
+			<div><a href ="javascript:conti()" id = "continue">继续挑战</a></div>
+		</div>
+		<div class = "dialog-fail">
+			<div class = "fail">很遗憾您失败了</div>
+			<div><a href ="javascript:again()" id = "newgame">重新开始</a></div>
+		</div>
+	</div>
+	
+</body>
+</html>
